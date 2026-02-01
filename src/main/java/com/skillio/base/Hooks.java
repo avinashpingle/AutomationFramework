@@ -16,6 +16,12 @@ import io.cucumber.java.Before;
 public class Hooks {
 	Keyword keyword = new Keyword();
 
+	
+	@Before("@login")
+	public void someThing() {
+		System.out.println("Something somethig....!");
+	}
+	
 	@Before
 	public void setUp() throws Exception {
 		keyword.openBrowser(App.getBrowserName());

@@ -8,7 +8,9 @@ Background:
 	
 	
 
+
 #Vishal
+@login 
 Scenario: Verify if employee name appears while creating an user
 	When User opens PIM Menu
 	And adds user with name Rishi Kapoor
@@ -17,6 +19,8 @@ Scenario: Verify if employee name appears while creating an user
 	
 
 #Tushar
+@regression
 Scenario: Verify if user role is creatd
 	When user opens pim menu
+	Then verify if user role is created as ESS
 	
